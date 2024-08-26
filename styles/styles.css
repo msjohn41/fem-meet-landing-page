@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* START CSS STYLES */
+
+:root{
+    --cyan-600: rgb(77, 150, 168);
+    --cyan-300: rgb(143, 227, 249);
+    --purple-600: rgb(133, 95, 177);
+    --purple-300: rgb(217, 184, 255);
+    --slate-900: rgb(40, 40, 61);
+    --slate-600: rgb(135, 135, 157);
+    --slate-300: rgb(209, 209, 223);
+    --white: rgb(250, 250,250);
+}
+
+html{
+    font-family: 'Red Hat Display';
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.hero-tablet{
+    display: none;
+}
+
+.hero-middle{
+    text-align: center;
+    margin: 0 50px;
+}
+
+.hero-middle p{
+    line-height: 150%;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--slate-900);
+    padding-bottom: 25px;
+}
+
+.buttons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.download{
+    background-color: var(--cyan-600);
+    color: var(--white);
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    margin: 0 5px;
+}
+
+.whatsthis{
+    background-color: var(--purple-600);
+    color: var(--white);
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    margin: 0 5px;
+}
+
+.number{
+    margin-top: 125px;
+}
+
+.num-one{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid var(--slate-300);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.num-one p{
+    display: flex;
+    align-items: center;
+    color: var(--slate-300);
+}
+
+.photo-grid{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 2rem;
+    padding-top: 50px;
+}
+
+.photo-grid img{
+    height: 250px;
+    width: 250px;
+}
+
+.information{
+    padding-top: 50px;
+    margin: auto;
+    width: 500px;
+}
+
+.built-text{
+    text-align: center;
+    color: var(--cyan-600);
+    font-weight: bold;
+    letter-spacing: 10%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.information h2{
+    text-align: center;
+    margin: 15px;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.info-text{
+    text-align: center;
+    line-height: 150%;
+}
+
+.num-two{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border: 1px solid var(--slate-300);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.num-two p{
+    display: flex;
+    align-items: center;
+    color: var(--slate-300);
+}
+
+.number{
+    position: relative;
+    bottom: 15px;
+}
+
+footer{
+    background-image: url(/starter-code/assets/desktop/image-footer.jpg);
+    height: 305px;
+    margin-top: 200px;
+}
+
+.overlay{
+    width: 100%;
+    height: 305px;
+    background-color: rgb(77, 150, 168, 0.9);
+}
+
+footer h2{
+    color: var(--white);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+footer p{
+    color: var(--white);
+}
+
+.footer-elements{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-elements h2{
+    margin: 0px 100px;
+}
+
+.footer-elements p{
+    margin: 0px 100px;
+}
+
+.footer-elements button{
+    margin: 0px 100px;
+}
+
+.footer-download{
+    background-color: var(--purple-600);
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-tablet{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .hero-left{
+        display: none;
+    }
+
+    .hero-right{
+        display: none;
+    }
+   
+   .footer-elements{
+    margin-top: 45px;
+    display: block;
+   }
+
+   .footer-elements p{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 25px 0px;
+}
+
+.footer-elements button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    
+}
+    
+}
+
+@media screen and (max-width: 700px){
+
+    .buttons{
+        display: grid;
+        gap: 1rem;
+    }
+
+    .photo-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0px 25px;
+    }
+
+    .footer-elements p{
+        margin: 0 25px;
+        text-align: center;
+        line-height: 150%;
+    }
+}
+
+
